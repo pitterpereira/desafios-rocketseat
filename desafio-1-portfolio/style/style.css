@@ -1,10 +1,68 @@
-:root {
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
-    --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
-  }
+*{
+  margin: 0px;
+  padding: 0px
+}
 
-  body {
-    background-color: var(--body-bg-color);
-  }
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+}
+
+img.perfil{
+  width: 170px;
+
+  border-radius: 100%;
+}
+
+.container{
+  width: 90%;
+  padding-top: 35px;
+
+  display: flex;
+  justify-content: center;
+}
+
+aside{
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+
+  align-items: center;
+  gap: 30px;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  flex: 1.9;
+}
+
+.box{
+  width: 90%;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--bg-cards);
+
+  border-radius: 15px;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
