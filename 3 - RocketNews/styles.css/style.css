@@ -1,11 +1,90 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+
+    --spartan: 'League Spartan', sans-serif;
+    --work-sans: 'Work Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
-    
+body {
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
+}
+
+main {
+    height: 70vh;
+    width: 55%;
+
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+    z-index: 2;
+}
+
+label {
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+    color: var(--form-color);
+    font-family: var(--spartan);
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    border: none;
+
+    display: block;
+}
+
+input {
+    width: 85%;
+    height: 60px;
+
+    padding-left: 15px;
+
+    font-family: var(--spartan);
+    font-weight: lighter;
+    font-size: 1.2rem;
+
+    outline: 0;
+    border-width: 0 0 0 10px;
+    border-color: var(--title-color);
+}
+
+button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    background-image: url("../assets/send.svg");
+    background-size: 30px 30px;
+    background-position: center;
+    background-color: var(--bg-button-color);
+    background-repeat: no-repeat;
+}
+
+a {
+    width: 25%;
+    margin-top: 5%;
+    display: inline-block;
+
+    color: var(--bg-button-color);
+    font-family: var(--spartan);
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    text-decoration: none;
 }
 
 /*
@@ -14,9 +93,78 @@ body{
 
 */
 
+.bg-black {
+    width: 45%;
+
+    background-color: black;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 10px 2px 5px black;
+
+    z-index: 1;
+
+}
+
+.bg-image {
+    height: 100vh;
+    width: 55%;
+
+    background-image: url("../assets/read_news.jpg");
+    background-position: right top;
+    background-size: auto 100%;
+
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    animation-fill-mode: forwards;
+}
+
+.input-text-button {
+    display: flex;
+    align-items: center;
+}
+
 
 /*
 
         IDs
 
 */
+
+#logo {
+    width: 50%;
+}
+
+#titulo {
+    margin-top: 10%;
+
+    color: var(--title-color);
+
+    font-family: var(--work-sans);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#subtitulo {
+    margin-top: 2%;
+
+    color: var(--text-color);
+
+    font-family: var(--spartan);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#descricao {
+    margin-top: 2%;
+
+    color: var(--text-color);
+
+    font-family: var(--spartan);
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
