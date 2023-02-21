@@ -120,6 +120,11 @@ main {
     outline: 2px solid rgb(26, 216, 20);
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .links-row {
     padding: 7px 0;
 
@@ -145,6 +150,11 @@ main {
     justify-content: space-between;
 }
 
+p.text-titulo {
+    font-size: 10px;
+    font-weight: 700;
+}
+
 p.text-small {
     font-size: 8px;
     font-weight: 400;
@@ -165,5 +175,10 @@ p.tech-nome {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
 
