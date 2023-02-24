@@ -49,6 +49,7 @@ div .botao-links {
 
     font-style: var(--fonte-poppins);
     font-size: 11px;
+    font-weight: bold;
     color: var(--purple);
 
     background-color: transparent;
